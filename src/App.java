@@ -6,10 +6,12 @@ import Servicios.CuentaBancariaServicio;
 ///
 public class App {
     public static void main(String[] args) throws Exception {
-        // CuentaBancaria albertitoCta = new CuentaBancaria(0001, 23565666, 100256);
+        // CuentaBancaria albertitoCta = new CuentaBancaria(0001, 23565666, 100256); //
+        // Asi se crea usando directo el contructor
         // System.out.println(albertitoCta);
+        ///
         CuentaBancariaServicio servicioCuentas = new CuentaBancariaServicio();
-        CuentaBancaria cuentaAlbertoAlbertinez = servicioCuentas.crearCuenta();
+        CuentaBancaria cuentaAlbertoAlbertinez = servicioCuentas.crearCuenta(); // Asi se crea usando el servicio
         System.out.println(cuentaAlbertoAlbertinez);
         // cuentaAlbertoAlbertinez.ingresarDinero(222);
         // System.out.println(cuentaAlbertoAlbertinez);
